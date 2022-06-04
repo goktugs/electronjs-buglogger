@@ -23,6 +23,7 @@
   "dependencies": {
     "bootstrap": "latest",
     "moment": "^2.29.3",
+    "mongoose": "^6.3.5",
     "react": "latest",
     "react-bootstrap": "latest",
     "react-dom": "latest",
