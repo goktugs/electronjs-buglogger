@@ -29,9 +29,14 @@ const App = () => {
     },
   ]);
 
+  function addItem(item) {
+    item._id = Math.floor(Math.random() * 90000) + 10000;
+    item.created = new Date().toString();
+    setLogs([...logs, item]);
+  }
   return (
     <Container>
-      <AddLogItem />
+      <AddLogItem addItem={addItem} />
       <Table>
         <thead>
           <tr>
