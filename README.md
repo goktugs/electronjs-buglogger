@@ -75,7 +75,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+    <img src="assets/screenshot.jpg" alt="Icon" width="480" height="480">
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
