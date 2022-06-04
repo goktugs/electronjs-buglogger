@@ -171,4 +171,4 @@ Project Link: [https://github.com/goktugs/electronjs-buglogger](https://github.c
 [license-url]: https://github.com/goktugs/electronjs-buglogger/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/goktugsevgil/
-[product-screenshot]: assets/screenshot.jpg
+[product-screenshot]: assets/screenshot.png
