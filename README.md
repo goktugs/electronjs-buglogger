@@ -75,7 +75,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-    <img src="assets/screenshot.jpg" alt="Icon" width="480" height="480">
+  <a href="https://github.com/goktugs/electronjs-buglogger">
+      <img src="assets/screenshot.jpg" alt="Icon" width="480" height="480">
+  </a>
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
