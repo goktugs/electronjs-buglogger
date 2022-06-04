@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Table from 'react-bootstrap/Table';
 import Alert from 'react-bootstrap/Alert';
@@ -6,36 +6,23 @@ import Alert from 'react-bootstrap/Alert';
 import LogItem from './LogItem';
 import AddLogItem from './AddLogItem';
 
+import { ipcRenderer } from 'electron';
+
 const App = () => {
-  const [logs, setLogs] = useState([
-    {
-      _id: 1,
-      text: 'This is log one',
-      priority: 'low',
-      user: 'Brad',
-      created: new Date().toString(),
-    },
-    {
-      _id: 2,
-      text: 'This is log two',
-      priority: 'moderate',
-      user: 'Kate',
-      created: new Date().toString(),
-    },
-    {
-      _id: 3,
-      text: 'This is log three',
-      priority: 'high',
-      user: 'John',
-      created: new Date().toString(),
-    },
-  ]);
+  const [logs, setLogs] = useState([]);
 
   const [alert, setAlert] = useState({
     show: false,
     message: '',
     variant: 'success',
   });
+
+  useEffect(() => {
+    ipcRenderer.send('logs:load');
+    ipcRenderer.on('logs:get', (e, logs) => {
+      setLogs(JSON.parse(logs));
+    });
+  }, []);
 
   function addItem(item) {
     if (item.text === '' || item.user === '' || item.priority === '') {
