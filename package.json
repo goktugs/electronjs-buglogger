@@ -21,10 +21,12 @@
     "postpackage": "electron-packager ./ --out=./release-builds"
   },
   "dependencies": {
-    "bootstrap": "^5.1.3",
-    "react": "^16.13.1",
-    "react-bootstrap": "^2.4.0",
-    "react-dom": "^16.13.1"
+    "bootstrap": "latest",
+    "moment": "^2.29.3",
+    "react": "latest",
+    "react-bootstrap": "latest",
+    "react-dom": "latest",
+    "react-moment": "^1.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",

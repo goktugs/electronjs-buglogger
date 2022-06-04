@@ -1,13 +1,38 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
+import Badge from 'react-bootstrap/Badge';
 
-const LogItem = () => {
+import Moment from 'react-moment';
+
+const LogItem = ({ log: { priority, _id, text, user, created } }) => {
+  const setVariant = () => {
+    if (priority === 'high') {
+      return 'danger';
+    } else if (priority === 'moderate') {
+      return 'warning';
+    } else {
+      return 'success';
+    }
+  };
+
   return (
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>
+        <Badge bg={setVariant()} className="p-2">
+          {priority.charAt(0).toUpperCase() + priority.slice(1)}
+        </Badge>{' '}
+      </td>
+      <td>{text} </td>
+      <td>{user} </td>
+      <td>
+        <Moment format="MMMM Do YYYY,h:mm:ss a">{new Date(created)}</Moment>{' '}
+      </td>
+      <td>
+        <Button variant="danger" size="sm">
+          {' '}
+          x
+        </Button>{' '}
+      </td>
     </tr>
   );
 };
