@@ -75,9 +75,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-  <a href="https://github.com/goktugs/electronjs-buglogger">
-      <img src="assets/screenshot.jpg" alt="Icon" width="480" height="480">
-  </a>
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -172,4 +171,4 @@ Project Link: [https://github.com/goktugs/electronjs-buglogger](https://github.c
 [license-url]: https://github.com/goktugs/electronjs-buglogger/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/goktugsevgil/
-[product-screenshot]: images/screenshot.jpg
+[product-screenshot]: assets/screenshot.jpg
