@@ -72,6 +72,16 @@
 </details>
 
 
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+[![Product Name Screen Shot][product-screenshot]](https://prnt.sc/J5jtf7ooLgxv)
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
 ### Built With
 
 * [Electron.js](https://www.electronjs.org/)
