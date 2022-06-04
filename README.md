@@ -33,10 +33,10 @@
     <img src="assets/icon.png" alt="Icon" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Buglogger</h3>
 
   <p align="center">
-    project_description
+    Desktop project made by electron for logging bug w/ mongoDB
     <br />
     <a href="https://github.com/goktugs/electronjs-buglogger"><strong>Explore the docs »</strong></a>
     <br />
@@ -93,6 +93,8 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 * [Electron.js](https://www.electronjs.org/)
 * [React.js](https://reactjs.org/)
+* [mongoDB](https://cloud.mongodb.com/)
+
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
